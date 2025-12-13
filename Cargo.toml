@@ -7,7 +7,7 @@ version = "0.1.0"
 authors = ["{{ authors }}"]
 edition = "2024"
 description = "{{ description }}"{% if licenses.size > 0 %}
-license = "{{ license | join: ' OR '}}"{% endif %}
+license = "{{ licenses | join: ' OR '}}"{% endif %}
 
 [package]
 name = "{{ crate_name }}"

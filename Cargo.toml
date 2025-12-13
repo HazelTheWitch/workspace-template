@@ -17,4 +17,4 @@ edition.workspace = true
 description.workspace = true{% if licenses.size > 0 %}
 license.workspace = true{% endif %}
 
-[package.dependencies]
+[dependencies]

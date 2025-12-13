@@ -1,0 +1,20 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["{{ authors }}"]
+edition = "2024"
+description = "{{ description }}"{% if licenses.size > 0 %}
+license = "{{ license | join: ' OR '}}"{% endif %}
+
+[package]
+name = "{{ crate_name }}"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description.workspace = true{% if licenses.size > 0 %}
+license.workspace = true{% endif %}
+
+[package.dependencies]

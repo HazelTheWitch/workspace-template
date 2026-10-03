@@ -8,6 +8,10 @@ let all_licenses = [
         name: "Apache-2.0",
         file: "LICENSE-APACHE",
     },
+    #{
+        name: "GPL-3.0-or-later",
+        file: "LICENSE-GPL",
+    },
 ];
 
 for license in all_licenses {

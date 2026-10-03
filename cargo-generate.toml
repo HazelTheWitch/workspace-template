@@ -3,7 +3,7 @@ ignore = ["crates/.gitkeep"]
 
 [placeholders]
 description = { prompt = "Enter your project's description", type = "string" }
-licenses = { prompt = "Choose the license(s) for your project", choices = ["MIT", "Apache-2.0"], type = "array" }
+licenses = { prompt = "Choose the license(s) for your project", choices = ["MIT", "Apache-2.0", "GPL-3.0-or-later"], type = "array" }
 
 [hooks]
 post = ["license.rhai"]
